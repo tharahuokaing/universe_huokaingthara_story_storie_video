@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Story Videos / វីដេអូរឿង និងសាច់រឿង</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-video spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">វីដេអូរឿង និងសាច់រឿង / Story Videos</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">🎥 UNIVERSE HUOKAING THARA • NARRATIVE & STORY VIDEOS</div>
+            <h2 class="km">កម្រងវីដេអូរឿង សាច់រឿងខ្លី និងភាពយន្តឌីជីថល</h2>
+            <h2 class="en">Story Videos, Short Narratives & Digital Cinema</h2>
+            <p class="km">
+                ទស្សនា និងស្វែងយល់ពីវីដេអូរឿងរបស់ <strong>UNIVERSE HUOKAING THARA Group</strong> ដែលផលិតឡើងដោយយកចិត្តទុកដាក់លើសាច់រឿង អារម្មណ៍ និងគុណភាពរូបភាព ដោយមានការរួមចំណែកពីលោក <strong>ជອນ រតនៈ</strong> និងក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Discover story videos from <strong>UNIVERSE HUOKAING THARA Group</strong> crafted for compelling storytelling, emotional pacing, and visual polish—with contributions from <strong>Mr. Chorn Rothanak</strong> and engineering by our elite programmers & developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="videoSearch" placeholder="ស្វែងរកវីដេអូរឿង... / Search story videos, drama, mystery, comedy...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="drama">Drama & Romance / មនោសញ្ចេតនា</button>
+                    <button class="pill-btn" data-filter="mystery">Mystery & Ghost / អាថ៌កំបាំង</button>
+                    <button class="pill-btn" data-filter="comedy">Comedy Story / កំប្លែង</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Videos Grid -->
+        <section class="videos-section">
+            <h3 class="section-heading">
+                <i class="fa-solid fa-film"></i>
+                <span class="km">បញ្ជីវីដេអូរឿង (Featured Story Videos)</span>
+                <span class="en">Featured Story Videos</span>
+            </h3>
+
+            <div class="videos-grid" id="videosGrid">
+
+                <!-- Video 1 -->
+                <article class="video-card featured" data-cat="drama">
+                    <div class="thumb-box">
+                        <span class="vid-tag">STORY 01 • DRAMA</span>
+                        <span class="runtime-badge"><i class="fa-regular fa-clock"></i> 14:20</span>
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h4 class="km">ដំណើរជីវិត និងការតស៊ូ</h4>
+                    <h4 class="en">Paths of Ambition & Heart</h4>
+                    <p class="km">សាច់រឿងអំពីក្តីសុបិន ការព្យាយាម និងទំនាក់ទំនងក្នុងសង្គមសម័យថ្មី។</p>
+                    <p class="en">A narrative story exploring ambition, resilience, and human connection in modern life.</p>
+                    <div class="card-footer">
+                        <span class="credit-txt">UNIVERSE HUOKAING THARA</span>
+                        <button class="watch-btn"
+                            data-title="ដំណើរជីវិត និងការតស៊ូ / Paths of Ambition & Heart"
+                            data-genre="Drama & Narrative Story"
+                            data-runtime="14:20 • 1080p HD"
+                            data-synopsis="A gripping story video highlighting personal growth, pivotal choices, and emotional turning points under UNIVERSE HUOKAING THARA.">
+                            <span class="km">បើកកម្មវិធីចាក់</span> / <span class="en">Open Player</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Video 2 -->
+                <article class="video-card" data-cat="mystery">
+                    <div class="thumb-box">
+                        <span class="vid-tag">STORY 02 • MYSTERY</span>
+                        <span class="runtime-badge"><i class="fa-regular fa-clock"></i> 18:45</span>
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h4 class="km">អាថ៌កំបាំងនៅផ្ទះចាស់</h4>
+                    <h4 class="en">Secrets of the Old House</h4>
+                    <p class="km">វីដេអូរឿងបែបអាថ៌កំបាំង និងព្រឺព្រួច ដែលមានការរួមចំណែកពីលោក ជອນ រតនៈ។</p>
+                    <p class="en">A suspenseful mystery story video featuring contributions from Mr. Chorn Rothanak.</p>
+                    <div class="card-footer">
+                        <span class="credit-txt">Mr. Chorn Rothanak & Team</span>
+                        <button class="watch-btn"
+                            data-title="អាថ៌កំបាំងនៅផ្ទះចាស់ / Secrets of the Old House"
+                            data-genre="Mystery & Supernatural Story"
+                            data-runtime="18:45 • 1080p HD"
+                            data-synopsis="Atmospheric tension builds as an investigation into a quiet house uncovers unexpected clues and eerie phenomena.">
+                            <span class="km">បើកកម្មវិធីចាក់</span> / <span class="en">Open Player</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Video 3 -->
+                <article class="video-card" data-cat="comedy">
+                    <div class="thumb-box">
+                        <span class="vid-tag">STORY 03 • COMEDY</span>
+                        <span class="runtime-badge"><i class="fa-regular fa-clock"></i> 11:10</span>
+                        <div class="play-overlay"><i class="fa-solid fa-play"></i></div>
+                    </div>
+                    <h4 class="km">រឿងសប្បាយៗប្រចាំថ្ងៃ</h4>
+                    <h4 class="en">Everyday Laughs & Twist</h4>
+                    <p class="km">សាច់រឿងកំប្លែងលាយឡំភាពភ្ញាក់ផ្អើល សម្រាប់ទស្សនាបន្ធូរអារម្មណ៍។</p>
+                    <p class="en">A lighthearted story video packed with humor, witty timing, and a fun twist ending.</p>
+                    <div class="card-footer">
+                        <span class="credit-txt">Creative Production Unit</span>
+                        <button class="watch-btn"
+                            data-title="រឿងសប្បាយៗប្រចាំថ្ងៃ / Everyday Laughs & Twist"
+                            data-genre="Comedy Story"
+                            data-runtime="11:10 • 1080p HD"
+                            data-synopsis="Fast-paced comedic storytelling designed to entertain audiences with relatable situations and punchlines.">
+                            <span class="km">បើកកម្មវិធីចាក់</span> / <span class="en">Open Player</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Video Player & Synopsis Modal -->
+    <div id="videoModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <div class="player-screen">
+                <div class="player-top-bar">
+                    <span class="live-pill"><i class="fa-solid fa-circle-play"></i> STORY PLAYER PREVIEW</span>
+                    <span id="modalRuntime" class="runtime-txt">00:00</span>
+                </div>
+                <div class="player-center">
+                    <i class="fa-solid fa-clapperboard player-icon"></i>
+                    <p id="modalVideoTitle" class="player-title">Story Title</p>
+                    <span id="modalGenre" class="player-genre">Genre</span>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <p id="modalSynopsis" class="synopsis-txt"></p>
+            </div>
+
+            <button id="closeVideoModal" class="control-btn full-width">
+                <span class="km">បិទកម្មវិធីចាក់</span> / <span class="en">Close Player</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
